@@ -14,18 +14,40 @@
 
         <title>Frontend Mentor | Fylo data storage component</title>
 
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        You’ve used 815 GB of your storage 185 GB Left 0 GB 1000 GB
+        <header>
+            <img class="logo" src="images/logo.svg" />
 
-        <div class="attribution">
+            <button><img src="images/icon-document.svg" /></button>
+            <button><img src="images/icon-folder.svg" /></button>
+            <button><img src="images/icon-upload.svg" /></button>
+        </header>
+
+        <main>
+            <p class="storage-summary">
+                You’ve used <span>815 GB</span> of your storage
+            </p>
+            <p class="storage-remaining">185 GB Left</p>
+            <p class="storage-lower-limit">0 GB</p>
+            <p class="storage-upper-limit">1000 GB</p>
+        </main>
+
+        <footer class="attribution">
             Challenge by
             <a
                 href="https://www.frontendmentor.io?ref=challenge"
                 target="_blank"
                 >Frontend Mentor</a
-            >. Coded by <a href="#">Your Name Here</a>.
-        </div>
+            >. Coded by <a href="#">A. Smith</a>.
+        </footer>
     </body>
 </html>
