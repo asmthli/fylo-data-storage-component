@@ -212,4 +212,25 @@ footer {
         grid-column: 2;
         grid-row: 1;
     }
+
+    .storage-remaining {
+        top: -8rem;
+        left: 11rem;
+
+        border-radius: 12px 12px 0 12px;
+    }
+
+    .storage-remaining::after {
+        display: block;
+
+        width: 20px;
+        height: 20px;
+
+        position: absolute;
+        left: 162px;
+        bottom: -20px;
+
+        content: "";
+        background: linear-gradient(45deg, #1e2d69 50%, white 50%);
+    }
 }
