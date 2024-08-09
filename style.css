@@ -71,6 +71,7 @@ header button {
     background-color: var(--secondary-color);
     border: none;
     border-radius: 7px;
+    cursor: pointer;
 }
 
 main {
