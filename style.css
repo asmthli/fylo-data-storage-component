@@ -1,6 +1,7 @@
 :root {
     --font-color: #dbd9ff;
-    --background-color: #1e2d69;
+    --primary-color: #1e2d69;
+    --secondary-color: #0c122c;
     --font: Raleway;
 
     --progress-bar-height: 22px;
@@ -48,7 +49,7 @@ header {
     height: 100%;
     padding: 3rem 4rem 2rem 2rem;
 
-    background-color: var(--background-color);
+    background-color: var(--primary-color);
     border-radius: 10px 100px 10px 10px;
 }
 
@@ -67,7 +68,7 @@ header button {
     height: 3rem;
     width: 3rem;
 
-    background-color: black;
+    background-color: var(--secondary-color);
     border: none;
     border-radius: 7px;
 }
@@ -80,7 +81,7 @@ main {
 
     padding: 2rem 2rem 2rem 2rem;
 
-    background-color: var(--background-color);
+    background-color: var(--primary-color);
     border-radius: 10px 10px 10px 10px;
 }
 
@@ -94,7 +95,7 @@ main progress {
 }
 
 progress[value] {
-    --_background-color: #0c122c;
+    --_background-color: var(--secondary-color);
     --_border-radius: 10px;
 
     -webkit-appearance: none;
@@ -142,6 +143,10 @@ progress[value]::after {
     border-radius: 100%;
 }
 
+.storage-summary span {
+    font-weight: bold;
+}
+
 .storage-lower-limit {
     grid-column: 1;
     grid-row: 3;
@@ -176,7 +181,7 @@ progress[value]::after {
 
 .storage-remaining span {
     font-size: 40px;
-    color: #0c122c;
+    color: var(--secondary-color);
 }
 
 footer {
@@ -201,6 +206,12 @@ footer {
         grid-template-columns: 2;
         grid-template-rows: 1;
         column-gap: 40px;
+
+        background: url(images/bg-desktop.png);
+        background-color: var(--secondary-color);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 100%;
     }
 
     header {
